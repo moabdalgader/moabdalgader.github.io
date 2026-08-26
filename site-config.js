@@ -7,7 +7,7 @@ window.SITE_CONFIG = {
 
   // ضع هنا مفتاح Web3Forms (سجّل مجاناً في web3forms.com ببريدك)
   // Paste your Web3Forms access key here.
-  WEB3FORMS_KEY: "",
+  WEB3FORMS_KEY: "05bf94a5-653d-4ba7-9128-d55fb25010c2",
 
   // عنوان الرسالة التي تصلك بالبريد
   SUBJECT: "New enquiry from your website",
