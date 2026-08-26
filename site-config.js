@@ -23,14 +23,18 @@ window.SITE_CONFIG = {
 
   document.querySelectorAll('form[action*="web3forms"]').forEach(function (form) {
     var key = form.querySelector('input[name="access_key"]');
-    if (key) key.value = cfg.WEB3FORMS_KEY || "";
+    // Only overwrite when this file actually supplies a key. The exported markup
+    // already carries the configured one, and blanking it here would silently
+    // break a working form.
+    if (key && cfg.WEB3FORMS_KEY) key.value = cfg.WEB3FORMS_KEY;
+    var effectiveKey = cfg.WEB3FORMS_KEY || (key && key.value) || "";
 
     var subject = form.querySelector('input[name="subject"]');
     if (subject && cfg.SUBJECT) subject.value = cfg.SUBJECT;
 
     // If no key is configured yet, don't let a visitor submit into a void —
     // hand them the email client instead so an enquiry is never lost.
-    if (!cfg.WEB3FORMS_KEY) {
+    if (!effectiveKey) {
       form.addEventListener("submit", function (e) {
         e.preventDefault();
         var get = function (n) {
