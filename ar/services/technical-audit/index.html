@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-pt-24">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#05070E">
+
+    <title>التدقيق التقني — محمد عبدالقادر</title>
+    <meta name="description" content="مراجعة مستقلة للكود والمعمارية والأداء والأمان — مع قائمة مرتبة بما يجب إصلاحه أولاً.">
+            <meta name="keywords" content="CTO Saudi Arabia, product consultant Jeddah, MVP consultant, SaaS architecture, technology leadership, fractional CTO">
+        <link rel="canonical" href="https://your-username.github.io/ar/services/technical-audit/">
+
+            <link rel="alternate" hreflang="en" href="https://your-username.github.io/en/services/technical-audit/">
+            <link rel="alternate" hreflang="ar" href="https://your-username.github.io/ar/services/technical-audit/">
+        <link rel="alternate" hreflang="x-default" href="https://your-username.github.io/en/">
+
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="محمد عبدالقادر">
+    <meta property="og:title" content="التدقيق التقني — محمد عبدالقادر">
+    <meta property="og:description" content="مراجعة مستقلة للكود والمعمارية والأداء والأمان — مع قائمة مرتبة بما يجب إصلاحه أولاً.">
+    <meta property="og:url" content="https://your-username.github.io/ar/services/technical-audit/">
+    <meta property="og:locale" content="ar_SA">
+        <meta name="twitter:card" content="summary_large_image">
+
+            <link rel="icon" href="../../../favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" as="style" href="../../../build/assets/app-hPLKZcY2.css" /><link rel="modulepreload" as="script" href="../../../build/assets/app-DHvjokmU.js" /><link rel="stylesheet" href="../../../build/assets/app-hPLKZcY2.css" data-navigate-track="reload" /><script type="module" src="../../../build/assets/app-DHvjokmU.js" data-navigate-track="reload"></script>
+    
+    <script type="application/ld+json">
+        {"<?php $__contextArgs = [];\nif (context()->has($__contextArgs[0])) :\nif (isset($value)) { $__contextPrevious[] = $value; }\n$value = context()->get($__contextArgs[0]); ?>":"https://schema.org","@type":"Person","name":"محمد عبدالقادر","jobTitle":"الرئيس التنفيذي للتقنية","description":"قائد تقني بخبرة تتجاوز ٨ سنوات في بناء منصات SaaS وتوسيعها. أساعد المؤسسين والشركات على التحقق من أفكارهم، وبناء نسخة أولية فعّالة، والتوسع بالمعمارية والفريق ونموذج التسليم الصحيح.","url":"../../../","email":"m.abdalgader@outlook.com","image":null,"address":{"@type":"PostalAddress","addressLocality":"جدة، المملكة العربية السعودية"},"sameAs":["https://www.linkedin.com/in/mohamed-abdalgader","https://contra.com/"],"knowsAbout":["Technology Strategy","Product Leadership","SaaS Platforms","Software Architecture","Agile Delivery"]}
+    </script>
+
+    
+    </head>
+<body class="min-h-screen bg-ink text-body antialiased">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:m-4 focus:rounded-lg focus:bg-gold-400 focus:px-4 focus:py-2 focus:text-ink">
+    Skip to content
+</a>
+
+<header x-data="{ open: false, scrolled: false }"
+        @scroll.window="scrolled = window.scrollY > 24"
+        class="fixed inset-x-0 top-0 z-50 transition-all duration-300"
+        :class="scrolled ? 'bg-ink/85 backdrop-blur-xl border-b border-hairline/70' : 'bg-transparent'">
+
+    <div class="container-x">
+        <div class="flex h-[72px] items-center justify-between gap-4">
+
+            
+            <a href="../../../ar/" class="group flex items-center gap-3">
+                                    <svg class="h-9 w-9" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+    <defs>
+        <linearGradient id="ma-gold" x1="4" y1="6" x2="44" y2="42" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F4D68A"/>
+            <stop offset="0.5" stop-color="#E9B44C"/>
+            <stop offset="1" stop-color="#C8912A"/>
+        </linearGradient>
+    </defs>
+    <path d="M5 41V9l11 15L27 9v32" stroke="url(#ma-gold)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M27 41l9-24 9 24" stroke="url(#ma-gold)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 33h8" stroke="url(#ma-gold)" stroke-width="3.4" stroke-linecap="round"/>
+</svg>
+                                <span class="hidden leading-tight sm:block">
+                    <span class="block text-[15px] font-extrabold tracking-tight text-white">محمد عبدالقادر</span>
+                    <span class="block text-[10.5px] font-semibold uppercase tracking-[0.16em] text-gold-500">مستشار المنتجات والتقنية</span>
+                </span>
+            </a>
+
+            
+            <nav class="hidden items-center gap-1 lg:flex" aria-label="Primary">
+                                                        <a href="../../../ar/"
+                       class="relative rounded-lg px-3 py-2 text-[14px] font-semibold transition-colors text-muted hover:text-white">
+                        الرئيسية
+                                            </a>
+                                                        <a href="../../../ar/services/"
+                       class="relative rounded-lg px-3 py-2 text-[14px] font-semibold transition-colors text-muted hover:text-white">
+                        الخدمات
+                                            </a>
+                                                        <a href="../../../ar/packages/"
+                       class="relative rounded-lg px-3 py-2 text-[14px] font-semibold transition-colors text-muted hover:text-white">
+                        الباقات
+                                            </a>
+                                                        <a href="../../../ar/work/"
+                       class="relative rounded-lg px-3 py-2 text-[14px] font-semibold transition-colors text-muted hover:text-white">
+                        أعمالي
+                                            </a>
+                                                        <a href="../../../ar/resume/"
+                       class="relative rounded-lg px-3 py-2 text-[14px] font-semibold transition-colors text-muted hover:text-white">
+                        السيرة الذاتية
+                                            </a>
+                                                        <a href="../../../ar/insights/"
+                       class="relative rounded-lg px-3 py-2 text-[14px] font-semibold transition-colors text-muted hover:text-white">
+                        مقالات
+                                            </a>
+                            </nav>
+
+            
+            <div class="flex items-center gap-2">
+                <a href="../../../en/services/technical-audit/"
+                   class="hidden items-center gap-1.5 rounded-lg border border-hairline px-3 py-2 text-[13px] font-bold text-muted transition-colors hover:border-gold-500/60 hover:text-gold-200 sm:inline-flex"
+                   hreflang="en">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 5h8M8 5c0 4-2 7-5 8.5M6.5 9c1 2.5 3 4.3 5.5 5"/><path d="M13.5 20l3.5-9 3.5 9M15 17h4"/>
+</svg>
+                    English
+                </a>
+
+                <a href="../../../ar/contact/" class="btn btn-gold hidden lg:inline-flex">
+                    تواصل
+                    <svg class="h-4 w-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6"/>
+</svg>
+                </a>
+
+                <button type="button" @click="open = !open"
+                        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-hairline text-muted lg:hidden"
+                        :aria-expanded="open" aria-label="Menu">
+                    <span x-show="!open"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 7h16M4 12h16M4 17h16"/>
+</svg>
+</span>
+                    <span x-show="open" x-cloak><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M6 6l12 12M18 6L6 18"/>
+</svg>
+</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div x-show="open" x-cloak x-transition.opacity
+         class="border-t border-hairline bg-ink/97 backdrop-blur-xl lg:hidden">
+        <div class="container-x space-y-1 py-5">
+                            <a href="../../../ar/"
+                   class="block rounded-lg px-3 py-2.5 text-[15px] font-semibold text-muted">
+                    الرئيسية
+                </a>
+                            <a href="../../../ar/services/"
+                   class="block rounded-lg px-3 py-2.5 text-[15px] font-semibold text-muted">
+                    الخدمات
+                </a>
+                            <a href="../../../ar/packages/"
+                   class="block rounded-lg px-3 py-2.5 text-[15px] font-semibold text-muted">
+                    الباقات
+                </a>
+                            <a href="../../../ar/work/"
+                   class="block rounded-lg px-3 py-2.5 text-[15px] font-semibold text-muted">
+                    أعمالي
+                </a>
+                            <a href="../../../ar/resume/"
+                   class="block rounded-lg px-3 py-2.5 text-[15px] font-semibold text-muted">
+                    السيرة الذاتية
+                </a>
+                            <a href="../../../ar/insights/"
+                   class="block rounded-lg px-3 py-2.5 text-[15px] font-semibold text-muted">
+                    مقالات
+                </a>
+            
+            <div class="flex items-center gap-3 pt-3">
+                <a href="../../../ar/contact/" class="btn btn-gold flex-1">
+                    تواصل
+                </a>
+                <a href="../../../en/services/technical-audit/" class="btn btn-dark">
+                    English
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+        
+    
+    <section class="relative overflow-hidden border-b border-hairline pb-14 pt-[136px] lg:pb-20 lg:pt-[160px]">
+        <div class="grid-bg absolute inset-0 opacity-70"></div>
+        <div class="glow-gold -top-32 start-[6%] h-80 w-80"></div>
+        <div class="glow-blue -bottom-40 end-[4%] h-96 w-96"></div>
+
+        <div class="container-x relative">
+            <nav class="mb-6 flex flex-wrap items-center gap-2 text-[12.5px] text-faint" aria-label="Breadcrumb">
+                <a href="../../../ar/" class="transition-colors hover:text-gold-300">الرئيسية</a>
+                <span class="text-gold-700">/</span>
+                <a href="../../../ar/services/" class="transition-colors hover:text-gold-300">الخدمات</a>
+                <span class="text-gold-700">/</span>
+                <span class="text-muted">التدقيق التقني</span>
+            </nav>
+
+            <div class="grid items-start gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
+                <div>
+                    <span class="inline-flex h-14 w-14 items-center justify-center rounded-xl border border-brand-purple/30 bg-brand-purple/10 text-brand-purple">
+                        <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/>
+</svg>
+                    </span>
+
+                    <h1 class="mt-6 text-4xl leading-[1.1] text-white sm:text-5xl">التدقيق التقني</h1>
+
+                                            <p class="mt-4 text-[19px] font-bold text-brand-purple">اكتشف ما يُعيق منتجك فعلاً.</p>
+                    
+                                            <p class="lede mt-5 max-w-2xl text-[17px]">مراجعة مستقلة للكود والمعمارية والأداء والأمان — مع قائمة مرتبة بما يجب إصلاحه أولاً.</p>
+                    
+                                            <div class="mt-7">
+                            <p class="text-[11.5px] font-bold uppercase tracking-[0.16em] text-faint">الأدوات والتقنيات</p>
+                            <div class="mt-3 flex flex-wrap gap-1.5">
+                                                                    <span class="rounded-md border border-hairline bg-navy/60 px-2.5 py-1 text-[12px] font-semibold text-muted">PHPStan</span>
+                                                                    <span class="rounded-md border border-hairline bg-navy/60 px-2.5 py-1 text-[12px] font-semibold text-muted">Laravel</span>
+                                                                    <span class="rounded-md border border-hairline bg-navy/60 px-2.5 py-1 text-[12px] font-semibold text-muted">MySQL</span>
+                                                                    <span class="rounded-md border border-hairline bg-navy/60 px-2.5 py-1 text-[12px] font-semibold text-muted">New Relic</span>
+                                                            </div>
+                        </div>
+                                    </div>
+
+                
+                <aside class="panel sticky top-24 overflow-hidden">
+                    
+                    <div class="p-6">
+                                                    <p class="text-[11.5px] font-bold uppercase tracking-[0.16em] text-faint">
+                                تبدأ من
+                            </p>
+                            <p class="mt-1.5 text-[36px] font-extrabold leading-none text-white" dir="ltr">$399</p>
+                        
+                        <dl class="mt-6 space-y-3.5 border-t border-hairline pt-5 text-[14px]">
+                                                            <div class="flex items-center gap-2.5">
+                                    <span class="text-gold-500"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/>
+</svg>
+</span>
+                                    <dt class="text-faint">مدة التسليم</dt>
+                                    <dd class="ms-auto font-bold text-white">٣ – ٥ أيام</dd>
+                                </div>
+                                                                                                                    <div class="flex items-center gap-2.5">
+                                    <span class="text-gold-500"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>
+</svg>
+</span>
+                                    <dt class="text-faint">صيغة التسليم</dt>
+                                    <dd class="ms-auto text-end font-bold text-white">تقرير تدقيق + قائمة أولويات</dd>
+                                </div>
+                                                    </dl>
+
+                        <div class="mt-6 space-y-2.5">
+                            <a href="#enquire" class="btn btn-gold w-full">
+                                اطلب تدقيقاً
+                                <svg class="h-4 w-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6"/>
+</svg>
+                            </a>
+                                                    </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section">
+        <div class="container-x">
+            <div class="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+                <div>
+                                            <h2 class="text-2xl text-white">نظرة عامة</h2>
+                        <div class="prose-brand mt-5 text-[15.5px]"><p>يجيب التدقيق على سؤال لا تستطيع معظم الفرق الإجابة عليه بشأن نفسها: هل الألم الذي نشعر به مشكلة كود، أم مشكلة معمارية، أم مشكلة عملية؟</p>
+<p>أراجع الكود ونموذج البيانات والبنية التحتية وسير التسليم، ثم أقدم ما وجدته بلغة الأعمال — ما يكلفك اليوم، وما سيكلفك عند عشرة أضعاف الحِمل، والترتيب الذي سأصلحه به.</p></div>
+                    
+                    
+                                    </div>
+
+                <div class="space-y-6">
+                                            <div class="panel p-6">
+                            <h2 class="flex items-center gap-2.5 text-[17px] font-bold text-white">
+                                <span class="text-gold-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.5"/>
+</svg>
+</span>
+                                ما ستحصل عليه
+                            </h2>
+                            <ul class="mt-4 space-y-2.5">
+                                                                    <li class="flex items-start gap-2.5 text-[14.5px] leading-snug text-muted">
+                                        <span class="mt-px shrink-0 text-gold-500"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                                        مراجعة الكود والمعمارية
+                                    </li>
+                                                                    <li class="flex items-start gap-2.5 text-[14.5px] leading-snug text-muted">
+                                        <span class="mt-px shrink-0 text-gold-500"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                                        تحليل الأداء والأمان
+                                    </li>
+                                                                    <li class="flex items-start gap-2.5 text-[14.5px] leading-snug text-muted">
+                                        <span class="mt-px shrink-0 text-gold-500"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                                        تقييم قابلية التوسع
+                                    </li>
+                                                                    <li class="flex items-start gap-2.5 text-[14.5px] leading-snug text-muted">
+                                        <span class="mt-px shrink-0 text-gold-500"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                                        توصيات قابلة للتنفيذ مرتبة بحسب الأثر
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                                            <div class="panel-quiet p-6">
+                            <h2 class="flex items-center gap-2.5 text-[17px] font-bold text-white">
+                                <span class="text-gold-400"><svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/>
+</svg>
+</span>
+                                مناسبة لـ
+                            </h2>
+                            <ul class="mt-4 space-y-2.5">
+                                                                    <li class="flex items-start gap-2.5 text-[14.5px] leading-snug text-muted">
+                                        <span class="mt-px shrink-0 text-gold-600"><svg class="h-4 w-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6"/>
+</svg>
+</span>
+                                        منتجات أصبحت بطيئة أو هشة
+                                    </li>
+                                                                    <li class="flex items-start gap-2.5 text-[14.5px] leading-snug text-muted">
+                                        <span class="mt-px shrink-0 text-gold-600"><svg class="h-4 w-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6"/>
+</svg>
+</span>
+                                        مستثمرون أو مؤسسون يجرون فحصاً تقنياً نافياً للجهالة
+                                    </li>
+                                                                    <li class="flex items-start gap-2.5 text-[14.5px] leading-snug text-muted">
+                                        <span class="mt-px shrink-0 text-gold-600"><svg class="h-4 w-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6"/>
+</svg>
+</span>
+                                        فرق ورثت كوداً من جهة أخرى
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                                    </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    
+    
+    
+    <section class="section border-t border-hairline bg-ink-2" id="enquire">
+        <div class="container-x">
+            <div class="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+                <div>
+                    <div class="max-w-2xl">
+            <span class="eyebrow">
+            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/>
+</svg>
+            تواصل
+        </span>
+    
+    <h2 class="mt-3 text-3xl leading-[1.15] text-white sm:text-4xl lg:text-[42px]">
+        اطلب تدقيقاً    </h2>
+
+            <p class="lede mt-4">أخبرني بما تبنيه. أرد خلال يوم عمل واحد.</p>
+    
+    </div>
+
+                    <div class="panel-quiet mt-8 p-5">
+                        <p class="text-[12px] font-bold uppercase tracking-[0.14em] text-faint">الخدمات</p>
+                        <p class="mt-1.5 text-[16px] font-bold text-white">التدقيق التقني</p>
+                                                    <p class="mt-1 text-[14px] text-gold-300" dir="ltr">$399</p>
+                                            </div>
+                </div>
+
+                <div class="panel p-6 lg:p-8">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
+        <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY"><input type="hidden" name="subject" value="New enquiry from your website"><input type="hidden" name="from_name" value="mohamedabdalgader.com"><input type="hidden" name="redirect" value="https://your-username.github.io/en/thank-you/"><input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off"><input type="hidden" name="source" value="ar/services/technical-audit">
+    <input type="hidden" name="package_id" value="">
+
+    
+    <div class="absolute -top-[9999px] start-0 h-0 w-0 overflow-hidden" aria-hidden="true">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+    </div>
+
+    
+    <div class="grid gap-5 sm:grid-cols-2">
+        <div>
+            <label class="label" for="name">الاسم الكامل <span class="text-gold-400">*</span></label>
+            <input class="field" type="text" id="name" name="name" value="" required
+                   autocomplete="name" placeholder="الاسم الكامل">
+        </div>
+        <div>
+            <label class="label" for="email">البريد الإلكتروني <span class="text-gold-400">*</span></label>
+            <input class="field" type="email" id="email" name="email" value="" required
+                   autocomplete="email" dir="ltr" placeholder="you@company.com">
+        </div>
+    </div>
+
+    <div class="grid gap-5 sm:grid-cols-2">
+        <div>
+            <label class="label" for="phone">الجوال / واتساب</label>
+            <input class="field" type="tel" id="phone" name="phone" value=""
+                   autocomplete="tel" dir="ltr" placeholder="+966 5X XXX XXXX">
+        </div>
+        <div>
+            <label class="label" for="company">الشركة</label>
+            <input class="field" type="text" id="company" name="company" value=""
+                   autocomplete="organization">
+        </div>
+    </div>
+
+    <div>
+        <label class="label" for="service_id">ما الخدمة التي تهمك؟</label>
+        <select class="field" id="service_id" name="service_id">
+            <option value="">اختر خدمة (اختياري)</option>
+                            <option value="استكشاف النسخة الأولية"
+                    >
+                    استكشاف النسخة الأولية
+                </option>
+                            <option value="المخطط التقني للنسخة الأولية"
+                    >
+                    المخطط التقني للنسخة الأولية
+                </option>
+                            <option value="التدقيق التقني"
+                    selected>
+                    التدقيق التقني
+                </option>
+                            <option value="حلول الأتمتة بالذكاء الاصطناعي"
+                    >
+                    حلول الأتمتة بالذكاء الاصطناعي
+                </option>
+                            <option value="إنقاذ المشاريع واستعادتها"
+                    >
+                    إنقاذ المشاريع واستعادتها
+                </option>
+                            <option value="جلسة استشارية فردية"
+                    >
+                    جلسة استشارية فردية
+                </option>
+                    </select>
+    </div>
+
+            <div class="grid gap-5 sm:grid-cols-2">
+            <div>
+                <label class="label" for="budget">الميزانية التقديرية</label>
+                <select class="field" id="budget" name="budget">
+                    <option value="">اختر نطاقاً (اختياري)</option>
+                                            <option value="&lt; $500"  dir="ltr">&lt; $500</option>
+                                            <option value="$500 – $2,000"  dir="ltr">$500 – $2,000</option>
+                                            <option value="$2,000 – $10,000"  dir="ltr">$2,000 – $10,000</option>
+                                            <option value="$10,000 – $50,000"  dir="ltr">$10,000 – $50,000</option>
+                                            <option value="&gt; $50,000"  dir="ltr">&gt; $50,000</option>
+                                    </select>
+            </div>
+            <div>
+                <label class="label" for="timeline">الجدول الزمني</label>
+                <select class="field" id="timeline" name="timeline">
+                    <option value="">متى تريد البدء؟</option>
+                                            <option value="asap" >في أقرب وقت</option>
+                                            <option value="1month" >خلال شهر</option>
+                                            <option value="quarter" >هذا الربع</option>
+                                            <option value="exploring" >أستكشف الخيارات فقط</option>
+                                    </select>
+            </div>
+        </div>
+    
+    <div>
+        <label class="label" for="message">تفاصيل المشروع <span class="text-gold-400">*</span></label>
+        <textarea class="field min-h-[140px] resize-y" id="message" name="message" required
+                  placeholder="ما الذي تبنيه، ولمن، وأين تواجه العقبة؟"></textarea>
+    </div>
+
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <button type="submit" class="btn btn-gold">
+            إرسال الطلب
+            <svg class="h-4 w-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6"/>
+</svg>
+        </button>
+        <p class="max-w-xs text-[12px] leading-relaxed text-faint">
+            <svg class="mb-0.5 inline-block h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3"/>
+</svg>
+            بياناتك محفوظة وتُستخدم فقط للرد على طلبك.
+        </p>
+    </div>
+</form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+            <section class="section">
+            <div class="container-x">
+                <div class="flex items-end justify-between gap-4">
+                    <h2 class="text-2xl text-white">خدمات أخرى</h2>
+                    <a href="../../../ar/services/"
+                       class="inline-flex items-center gap-1.5 text-[13.5px] font-bold text-gold-300">
+                        كل الخدمات
+                        <svg class="h-4 w-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6"/>
+</svg>
+                    </a>
+                </div>
+                <div class="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                                            <a href="../../../ar/services/mvp-discovery/" class="panel card-hover group relative flex h-full flex-col overflow-hidden p-6">
+
+            <span class="badge badge-gold absolute end-4 top-4 text-[10px] uppercase tracking-wider">★</span>
+    
+    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-gold-500/30 bg-gold-400/10 text-gold-300">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.9v.2h5v-.2c0-.8.4-1.5 1-1.9A6 6 0 0 0 12 3z"/>
+</svg>
+    </span>
+
+    <h3 class="mt-5 text-[19px] font-bold leading-snug text-white transition-colors group-hover:text-gold-200">
+        استكشاف النسخة الأولية
+    </h3>
+
+            <p class="mt-1.5 text-[13.5px] font-semibold text-gold-300">تحقّق من فكرتك. وحدّد النسخة الأولية الصحيحة.</p>
+    
+            <p class="mt-3 text-[14.5px] leading-relaxed text-muted">أحلّل فكرتك ومستخدميك المستهدفين والسوق لتحديد نسخة أولية مركّزة تحقق أعلى قيمة بأقل قدر من التطوير.</p>
+    
+            <ul class="mt-5 space-y-2">
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-gold-300"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    تحليل الفكرة وسياق السوق
+                </li>
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-gold-300"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    المستخدمون المستهدفون والقيمة المقترحة
+                </li>
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-gold-300"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    نطاق النسخة الأولية والميزات الأساسية
+                </li>
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-gold-300"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    مسار المستخدم بصورة عامة
+                </li>
+                    </ul>
+    
+    <div class="mt-auto pt-6">
+        <div class="flex items-end justify-between gap-3 border-t border-hairline pt-4">
+            <div>
+                                    <p class="text-[11px] font-semibold uppercase tracking-wider text-faint">
+                        تبدأ من
+                    </p>
+                    <p class="text-xl font-extrabold text-white" dir="ltr">$149</p>
+                            </div>
+            <span class="inline-flex items-center gap-1.5 text-[13.5px] font-bold text-gold-300">
+                ابدأ بالاستكشاف
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1 rotate-180 group-hover:-translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6"/>
+</svg>
+            </span>
+        </div>
+    </div>
+</a>
+                                            <a href="../../../ar/services/mvp-blueprint/" class="panel card-hover group relative flex h-full flex-col overflow-hidden p-6">
+
+            <span class="badge badge-gold absolute end-4 top-4 text-[10px] uppercase tracking-wider">★</span>
+    
+    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-brand-blue/30 bg-brand-blue/10 text-brand-blue">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="9" y="3" width="6" height="4" rx="1"/><rect x="3" y="15" width="6" height="4" rx="1"/><rect x="15" y="15" width="6" height="4" rx="1"/><path d="M12 7v4M6 15v-2h12v2"/>
+</svg>
+    </span>
+
+    <h3 class="mt-5 text-[19px] font-bold leading-snug text-white transition-colors group-hover:text-gold-200">
+        المخطط التقني للنسخة الأولية
+    </h3>
+
+            <p class="mt-1.5 text-[13.5px] font-semibold text-brand-blue">خطة كاملة لتصميم وبناء وإطلاق نسختك الأولية.</p>
+    
+            <p class="mt-3 text-[14.5px] leading-relaxed text-muted">مخطط تفصيلي للمنتج والتقنية يعرف به فريق التطوير بدقة ماذا يبني وكيف يبنيه.</p>
+    
+            <ul class="mt-5 space-y-2">
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-brand-blue"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    قصص المستخدم والمتطلبات الوظيفية
+                </li>
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-brand-blue"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    المعمارية التقنية
+                </li>
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-brand-blue"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    تصميم قاعدة البيانات ومخطط العلاقات
+                </li>
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-brand-blue"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    هيكل واجهات البرمجة ونقاط النهاية
+                </li>
+                    </ul>
+    
+    <div class="mt-auto pt-6">
+        <div class="flex items-end justify-between gap-3 border-t border-hairline pt-4">
+            <div>
+                                    <p class="text-[11px] font-semibold uppercase tracking-wider text-faint">
+                        تبدأ من
+                    </p>
+                    <p class="text-xl font-extrabold text-white" dir="ltr">$349</p>
+                            </div>
+            <span class="inline-flex items-center gap-1.5 text-[13.5px] font-bold text-brand-blue">
+                احصل على المخطط
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1 rotate-180 group-hover:-translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6"/>
+</svg>
+            </span>
+        </div>
+    </div>
+</a>
+                                            <a href="../../../ar/services/ai-automation/" class="panel card-hover group relative flex h-full flex-col overflow-hidden p-6">
+
+    
+    <span class="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-brand-green/30 bg-brand-green/10 text-brand-green">
+        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="4" y="8" width="16" height="11" rx="3"/><circle cx="9" cy="13.5" r="1.2"/><circle cx="15" cy="13.5" r="1.2"/><path d="M12 4v4M9 19v2M15 19v2"/>
+</svg>
+    </span>
+
+    <h3 class="mt-5 text-[19px] font-bold leading-snug text-white transition-colors group-hover:text-gold-200">
+        حلول الأتمتة بالذكاء الاصطناعي
+    </h3>
+
+            <p class="mt-1.5 text-[13.5px] font-semibold text-brand-green">أتمِت العمل الذي لا يجب أن يحتاج إنساناً.</p>
+    
+            <p class="mt-3 text-[14.5px] leading-relaxed text-muted">رسم عملياتك اليدوية ثم أتمتتها بأدوات سير العمل وتكاملات الذكاء الاصطناعي الصامدة في بيئة الإنتاج.</p>
+    
+            <ul class="mt-5 space-y-2">
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-brand-green"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    تحليل العملية وخريطة الأتمتة
+                </li>
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-brand-green"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    بناء أتمتة سير العمل
+                </li>
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-brand-green"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    تكامل الذكاء الاصطناعي (روبوتات محادثة، وكلاء)
+                </li>
+                            <li class="flex items-start gap-2 text-[13.5px] text-muted">
+                    <span class="mt-0.5 text-brand-green"><svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M20 6L9.5 17 4 11.5"/>
+</svg>
+</span>
+                    تكامل الأدوات (واجهات برمجة، ويب هوك)
+                </li>
+                    </ul>
+    
+    <div class="mt-auto pt-6">
+        <div class="flex items-end justify-between gap-3 border-t border-hairline pt-4">
+            <div>
+                                    <p class="text-[11px] font-semibold uppercase tracking-wider text-faint">
+                        تبدأ من
+                    </p>
+                    <p class="text-xl font-extrabold text-white" dir="ltr">$499</p>
+                            </div>
+            <span class="inline-flex items-center gap-1.5 text-[13.5px] font-bold text-brand-green">
+                أتمِت عملية
+                <svg class="h-4 w-4 transition-transform group-hover:translate-x-1 rotate-180 group-hover:-translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 12h15M13 6l6 6-6 6"/>
+</svg>
+            </span>
+        </div>
+    </div>
+</a>
+                                    </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="relative mt-24 overflow-hidden border-t border-hairline bg-ink-2">
+    <div class="glow-gold -start-24 -top-24 h-72 w-72"></div>
+
+    <div class="container-x relative py-16">
+        <div class="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.1fr]">
+
+            
+            <div>
+                <div class="flex items-center gap-3">
+                                            <svg class="h-10 w-10" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+    <defs>
+        <linearGradient id="ma-gold" x1="4" y1="6" x2="44" y2="42" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#F4D68A"/>
+            <stop offset="0.5" stop-color="#E9B44C"/>
+            <stop offset="1" stop-color="#C8912A"/>
+        </linearGradient>
+    </defs>
+    <path d="M5 41V9l11 15L27 9v32" stroke="url(#ma-gold)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M27 41l9-24 9 24" stroke="url(#ma-gold)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M32 33h8" stroke="url(#ma-gold)" stroke-width="3.4" stroke-linecap="round"/>
+</svg>
+                                        <span class="leading-tight">
+                        <span class="block text-base font-extrabold text-white">محمد عبدالقادر</span>
+                        <span class="block text-[10.5px] font-semibold uppercase tracking-[0.16em] text-gold-500">مستشار المنتجات والتقنية</span>
+                    </span>
+                </div>
+
+                <p class="lede mt-5 max-w-sm text-[15px]">استشارات المنتج والتقنية لمؤسسي الشركات والفرق التي تبني برمجيات جدية.</p>
+
+                                    <span class="badge badge-live mt-6">
+                        <span class="relative flex h-2 w-2">
+                            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-green opacity-70"></span>
+                            <span class="relative inline-flex h-2 w-2 rounded-full bg-brand-green"></span>
+                        </span>
+                        متاح لمشاريع جديدة
+                    </span>
+                            </div>
+
+            
+            <div>
+                <h3 class="text-[13px] font-bold uppercase tracking-[0.14em] text-white">تنقل</h3>
+                <ul class="mt-5 space-y-3 text-[14.5px]">
+                                            <li>
+                            <a href="../../../ar/"
+                               class="text-muted transition-colors hover:text-gold-300">الرئيسية</a>
+                        </li>
+                                            <li>
+                            <a href="../../../ar/services/"
+                               class="text-muted transition-colors hover:text-gold-300">الخدمات</a>
+                        </li>
+                                            <li>
+                            <a href="../../../ar/packages/"
+                               class="text-muted transition-colors hover:text-gold-300">الباقات</a>
+                        </li>
+                                            <li>
+                            <a href="../../../ar/work/"
+                               class="text-muted transition-colors hover:text-gold-300">أعمالي</a>
+                        </li>
+                                            <li>
+                            <a href="../../../ar/resume/"
+                               class="text-muted transition-colors hover:text-gold-300">السيرة الذاتية</a>
+                        </li>
+                                            <li>
+                            <a href="../../../ar/insights/"
+                               class="text-muted transition-colors hover:text-gold-300">مقالات</a>
+                        </li>
+                                            <li>
+                            <a href="../../../ar/contact/"
+                               class="text-muted transition-colors hover:text-gold-300">تواصل</a>
+                        </li>
+                                    </ul>
+            </div>
+
+            
+            <div>
+                <h3 class="text-[13px] font-bold uppercase tracking-[0.14em] text-white">الخدمات</h3>
+                <ul class="mt-5 space-y-3 text-[14.5px]">
+                                            <li>
+                            <a href="../../../ar/services/mvp-discovery/"
+                               class="text-muted transition-colors hover:text-gold-300">استكشاف النسخة الأولية</a>
+                        </li>
+                                            <li>
+                            <a href="../../../ar/services/mvp-blueprint/"
+                               class="text-muted transition-colors hover:text-gold-300">المخطط التقني للنسخة الأولية</a>
+                        </li>
+                                            <li>
+                            <a href="../../../ar/services/technical-audit/"
+                               class="text-muted transition-colors hover:text-gold-300">التدقيق التقني</a>
+                        </li>
+                                            <li>
+                            <a href="../../../ar/services/ai-automation/"
+                               class="text-muted transition-colors hover:text-gold-300">حلول الأتمتة بالذكاء الاصطناعي</a>
+                        </li>
+                                            <li>
+                            <a href="../../../ar/services/project-rescue/"
+                               class="text-muted transition-colors hover:text-gold-300">إنقاذ المشاريع واستعادتها</a>
+                        </li>
+                                    </ul>
+            </div>
+
+            
+            <div>
+                <h3 class="text-[13px] font-bold uppercase tracking-[0.14em] text-white">تواصل</h3>
+                <ul class="mt-5 space-y-3.5 text-[14.5px]">
+                                            <li class="flex items-start gap-2.5">
+                            <span class="mt-0.5 text-gold-500"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/>
+</svg>
+</span>
+                            <a href="mailto:m.abdalgader@outlook.com" class="text-muted transition-colors hover:text-gold-300">m.abdalgader@outlook.com</a>
+                        </li>
+                                                                <li class="flex items-start gap-2.5">
+                            <span class="mt-0.5 text-gold-500"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M6 3h3l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/>
+</svg>
+</span>
+                            <a href="tel:+966595872064" dir="ltr" class="text-muted transition-colors hover:text-gold-300">+966 59 587 2064</a>
+                        </li>
+                                                                <li class="flex items-start gap-2.5">
+                            <span class="mt-0.5 text-gold-500"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>
+</svg>
+</span>
+                            <span class="text-muted">جدة، المملكة العربية السعودية</span>
+                        </li>
+                                    </ul>
+
+                                    <div class="mt-6 flex flex-wrap gap-2">
+                                                                                <a href="https://www.linkedin.com/in/mohamed-abdalgader" target="_blank" rel="noopener noreferrer"
+                               title="Linkedin"
+                               class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-hairline text-muted transition-colors hover:border-gold-500/60 hover:text-gold-300">
+                                <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5V17M7.5 7.6v.01M11.5 17v-3.6c0-1.3 1-2.2 2.2-2.2s2.3.9 2.3 2.2V17M11.5 11v6"/>
+</svg>
+                            </a>
+                                                                                <a href="https://contra.com/" target="_blank" rel="noopener noreferrer"
+                               title="Contra"
+                               class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-hairline text-muted transition-colors hover:border-gold-500/60 hover:text-gold-300">
+                                <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/>
+</svg>
+                            </a>
+                                            </div>
+                            </div>
+        </div>
+
+        <div class="hairline mt-14"></div>
+
+        <div class="mt-7 flex flex-col gap-3 text-[13px] text-faint sm:flex-row sm:items-center sm:justify-between">
+            <p>© 2026 محمد عبدالقادر. جميع الحقوق محفوظة.</p>
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-2">
+                                    <a href="../../../ar/privacy/"
+                       class="transition-colors hover:text-gold-300">سياسة الخصوصية</a>
+                                <a href="../../../sitemap.xml" class="transition-colors hover:text-gold-300">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
