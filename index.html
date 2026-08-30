@@ -4,9 +4,11 @@
 <meta charset="utf-8">
 <title>Mohamed Abdalgader</title>
 <script>
-  // Send Arabic speakers to /ar, everyone else to /en
-  var lang = (navigator.language || 'en').toLowerCase();
-  location.replace(lang.indexOf('en') === 0 ? 'ar/' : 'en/');
+  // English is the site's front door for everyone. Arabic is one click away in
+  // the header, so a visitor chooses it rather than being sorted by their
+  // browser's locale — which is often not the language they want to read a
+  // professional profile in.
+  location.replace('en/');
 </script>
 <meta http-equiv="refresh" content="0; url=en/">
 <link rel="canonical" href="en/">
